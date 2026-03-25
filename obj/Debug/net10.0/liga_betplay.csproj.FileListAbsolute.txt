@@ -1,0 +1,14 @@
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\bin\Debug\net10.0\liga_betplay.exe
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\bin\Debug\net10.0\liga_betplay.deps.json
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\bin\Debug\net10.0\liga_betplay.runtimeconfig.json
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\bin\Debug\net10.0\liga_betplay.dll
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\bin\Debug\net10.0\liga_betplay.pdb
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.AssemblyInfo.cs
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.dll
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\refint\liga_betplay.dll
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.pdb
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.genruntimeconfig.cache
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\ref\liga_betplay.dll
