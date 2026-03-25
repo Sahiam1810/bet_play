@@ -7,3 +7,8 @@ torneoService.ListarEquipos();
 
 torneoService.SimularPartido("Atlético Nacional", "Millonarios FC");
 torneoService.SimularPartido("América de Cali", "Junior de Barranquilla");
+
+var consultaService = new ConsultaService(equipos);
+
+consultaService.MostrarTabla();
+// consultaService.MostrarEstadisticasDestacadas();
