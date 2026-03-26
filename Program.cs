@@ -11,4 +11,11 @@ torneoService.SimularPartido("América de Cali", "Junior de Barranquilla");
 var consultaService = new ConsultaService(equipos);
 
 consultaService.MostrarTabla();
+consultaService.MostrarLider();
+consultaService.MostrarMasGolesAFavor();
+consultaService.MostrarMenosGolesEnContra();
+consultaService.MostrarMasGanados();
+consultaService.MostrarMasEmpates();
+consultaService.MostrarMasDerrotas();
+
 // consultaService.MostrarEstadisticasDestacadas();
