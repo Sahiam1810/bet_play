@@ -370,19 +370,19 @@ public class ConsultaService
 
     public void MostrarResumenGeneral()
     {
-        int totalPartidos  = _equipos.Sum(e => e.PJ) / 2;
-        int totalGoles     = _equipos.Sum(e => e.GF) / 2;
-        int equiposConPJ   = _equipos.Count(e => e.PJ > 0);
+        int totalPartidos = _equipos.Sum(e => e.PJ) / 2;
+        int totalGoles = _equipos.Sum(e => e.GF) / 2;
+        int equiposConPJ = _equipos.Count(e => e.PJ > 0);
 
-        Console.WriteLine("\n  ──────────────────────────────────");
+        Console.WriteLine("\n  --------------------------------");
         Console.WriteLine("       Resumen general del torneo");
-        Console.WriteLine("  ──────────────────────────────────");
+        Console.WriteLine("  ----------------------------------");
         Console.WriteLine($"  Equipos registrados:  {_equipos.Count}");
         Console.WriteLine($"  Equipos con partidos: {equiposConPJ}");
         Console.WriteLine($"  Partidos jugados:     {totalPartidos}");
         Console.WriteLine($"  Goles marcados:       {totalGoles}");
         Console.WriteLine($"  Promedio goles/pdo:   {(totalPartidos > 0 ? (double)totalGoles / totalPartidos : 0):F2}");
-        Console.WriteLine("  ──────────────────────────────────");
+        Console.WriteLine("  -----------------------------------");
     }
 
     // ─── 21. Equipos por debajo del promedio de puntos 
@@ -429,7 +429,7 @@ public class ConsultaService
         Console.WriteLine($"   Más victorias:   {maxPG.Nombre} ({maxPG.PG} PG)");
         Console.WriteLine($"   Más empates:     {maxPE.Nombre} ({maxPE.PE} PE)");
         Console.WriteLine($"   Más derrotas:    {maxPP.Nombre} ({maxPP.PP} PP)");
-        Console.WriteLine("  ──────────────────────────────────");
+        Console.WriteLine("  ----------------------------------------------------");
     }
 
     // ─── 23. Ranking simple agrupado 
@@ -437,13 +437,11 @@ public class ConsultaService
     public void MostrarRankingAgrupado()
     {
         if (!HayDatos()) return;
-
-        // GroupBy agrupa equipos por cantidad de puntos
-        // Luego ordenamos los grupos de mayor a menor
+        
         var grupos = _equipos
             .Where(e => e.PJ > 0)
-            .GroupBy(e => e.TP)
-            .OrderByDescending(g => g.Key)
+            .GroupBy(e => e.TP) // grupa equipos por cantidad de puntos
+            .OrderByDescending(g => g.Key)  // ordenamos los grupos de mayor a menor
             .ToList();
 
         Console.WriteLine("\n  Ranking agrupado por puntos:");

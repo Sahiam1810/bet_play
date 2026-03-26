@@ -14,7 +14,7 @@ public class TorneoService
         _equipos = equipos;
     }
 
-    // ─── Listar equipos 
+    // --- Listar equipos 
 
     // Muestra todos los equipos registrados numerados.
     public void ListarEquipos()
@@ -27,7 +27,7 @@ public class TorneoService
             Console.WriteLine($"  {i + 1,2}. {_equipos[i].Nombre}");
     }
 
-    // ─── Registrar equipo 
+    // --- Registrar equipo 
 
     // Agrega un nuevo equipo al torneo si el nombre no existe.
     public void RegistrarEquipo()
@@ -55,11 +55,11 @@ public class TorneoService
         Console.WriteLine($" \"{nombre}\" registrado. Total: {_equipos.Count} equipo(s).");
     }
 
-    // ─── Simular partido 
+    // --- Simular partido 
 
     // Muestra el menú de selección y simula un partido entre dos equipos.
     // Permite ingresar el resultado manualmente o generarlo de forma aleatoria.
-    public void SimularPartido(string equipoLocal, string equipoVisitante)
+    public void SimularPartido()
     {
         if (_equipos.Count < 2)
         {
@@ -140,7 +140,7 @@ public class TorneoService
                            golesLocal < golesVisitante ? $"Ganó {visitante.Nombre}" :
                            "Empate";
 
-        Console.WriteLine($"\n  ⚽ {local.Nombre} {golesLocal} - {golesVisitante} {visitante.Nombre}");
+        Console.WriteLine($"\n  {local.Nombre} {golesLocal} - {golesVisitante} {visitante.Nombre}");
         Console.WriteLine($" Resultado: {resultado}");
     }
 }

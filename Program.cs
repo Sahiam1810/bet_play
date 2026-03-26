@@ -1,9 +1,9 @@
 ﻿using liga_betplay.Data;
 using liga_betplay.Services;
 
-Console.WriteLine("╔══════════════════════════════════════════════╗");
-Console.WriteLine("║      SIMULADOR LIGA BETPLAY DIMAYOR          ║");
-Console.WriteLine("╚══════════════════════════════════════════════╝\n");
+Console.WriteLine("|----------------------------------------------|");
+Console.WriteLine("|      SIMULADOR LIGA BETPLAY DIMAYOR          |");
+Console.WriteLine("|----------------------------------------------|\n");
 
 // Cargamos los 20 equipos de la Liga BetPlay
 var equipos  = DatosIniciales.ObtenerEquipos();
@@ -61,7 +61,7 @@ do
     {
         case "1":  torneo.ListarEquipos(); break;
         case "2":  torneo.RegistrarEquipo(); break;
-        case "3":  torneo.SimularPartido("Atlético Nacional", "Millonarios FC"); break;
+        case "3":  torneo.SimularPartido(); break;
         case "4":  consultas.MostrarTabla(); break;
         case "5":  consultas.MostrarLider(); break;
         case "6":  consultas.MostrarMasGolesAFavor(); break;
