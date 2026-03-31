@@ -13,4 +13,10 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+  <Content Include="equipos.json">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
 </Project>

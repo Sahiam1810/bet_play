@@ -22,7 +22,12 @@ public class Equipo
     // Diferencia de gol — criterio de desempate en la tabla
     public int DiferenciaGol => GF - GC;
 
-    // ─── Constructor 
+
+
+    // Constructor vacío requerido por JsonSerializer para deserializar
+    public Equipo() { }
+
+
 
     public Equipo(string nombre)
     {

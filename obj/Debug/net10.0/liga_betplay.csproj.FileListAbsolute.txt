@@ -13,3 +13,4 @@ C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_
 C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.genruntimeconfig.cache
 C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\ref\liga_betplay.dll
 C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\obj\Debug\net10.0\liga_betplay.sourcelink.json
+C:\Users\LENOVO\Documents\Campus\C#\BetPlay\liga_betplay\bin\Debug\net10.0\equipos.json

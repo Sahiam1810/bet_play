@@ -5,12 +5,34 @@ Console.WriteLine("|----------------------------------------------|");
 Console.WriteLine("|      SIMULADOR LIGA BETPLAY DIMAYOR          |");
 Console.WriteLine("|----------------------------------------------|\n");
 
-// Cargamos los 20 equipos de la Liga BetPlay
-var equipos  = DatosIniciales.ObtenerEquipos();
+// Intentamos cargar los equipos desde el archivo JSON
+// Si no existe el archivo, cargamos los 20 equipos iniciales
+
+List<liga_betplay.models.Equipo> equipos;
+
+var equiposCargados = PersistenciaService.Cargar();
+
+if (equiposCargados != null)
+{
+    // Había datos guardados — los usamos
+    equipos = equiposCargados;
+    Console.WriteLine($"  ✅ Datos cargados desde equipos.json ({equipos.Count} equipos).");
+}
+else
+{
+    // Primera vez que corre — cargamos los equipos iniciales
+    equipos = DatosIniciales.ObtenerEquipos();
+    Console.WriteLine($"  🆕 Cargando datos iniciales ({equipos.Count} equipos).");
+
+    // Guardamos de una vez el archivo inicial
+    PersistenciaService.Guardar(equipos);
+}
+
+
 var torneo   = new TorneoService(equipos);
 var consultas = new ConsultaService(equipos);
 
-Console.WriteLine($"  {equipos.Count} equipos cargados.\n");
+Console.WriteLine($"  {equipos.Count} equipos listos.\n");
 
 string opcion;
 
@@ -59,9 +81,23 @@ do
     // switch con todas las opciones del menú
     switch (opcion)
     {
-        case "1": torneo.ListarEquipos(); break;
-        case "2": torneo.RegistrarEquipo(); break;
-        case "3": torneo.SimularPartido(); break;
+        case "1": 
+            torneo.ListarEquipos(); 
+            break;
+
+        case "2": 
+            torneo.RegistrarEquipo(); 
+            // Guardamos después de registrar un equipo nuevo
+            PersistenciaService.Guardar(equipos);
+            break;
+
+
+        case "3": 
+            torneo.SimularPartido(); 
+            // Guardamos después de simular — las estadísticas cambiaron
+            PersistenciaService.Guardar(equipos);
+            break;
+
         case "4": consultas.MostrarTabla(); break;
         case "5": consultas.MostrarLider(); break;
         case "6": consultas.MostrarMasGolesAFavor(); break;
@@ -85,8 +121,16 @@ do
         case "24": consultas.MostrarBajoPromedioPuntos(); break;
         case "25": consultas.MostrarEstadisticasDestacadas(); break;
         case "26": consultas.MostrarRankingAgrupado(); break;
-        case "0":  Console.WriteLine("¡Hasta luego!"); break;
-        default:   Console.WriteLine("Opción inválida. Elige entre 0 y 26."); break;
+
+        case "0":  
+            // Guardado final antes de salir
+            PersistenciaService.Guardar(equipos);
+            Console.WriteLine("¡Hasta luego!"); 
+            break;
+
+        default:  
+            Console.WriteLine("Opción inválida. Elige entre 0 y 26."); 
+            break;
     }
 
 } while (opcion != "0");

@@ -1,0 +1,222 @@
+[
+  {
+    "Nombre": "Atl\u00E9tico Nacional",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Millonarios FC",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Am\u00E9rica de Cali",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Independiente Santa Fe",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Deportivo Cali",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Junior FC",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Deportivo Pereira",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Atl\u00E9tico Bucaramanga",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Envigado FC",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Once Caldas",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Independiente Medell\u00EDn",
+    "PJ": 1,
+    "PG": 1,
+    "PE": 0,
+    "PP": 0,
+    "GF": 4,
+    "GC": 3,
+    "TP": 3,
+    "DiferenciaGol": 1
+  },
+  {
+    "Nombre": "Alianza FC",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Deportivo Pasto",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "La Equidad",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Jaguares de C\u00F3rdoba",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Boyac\u00E1 Chic\u00F3",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Patriotas Boyac\u00E1",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Uni\u00F3n Magdalena",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Real Cartagena",
+    "PJ": 0,
+    "PG": 0,
+    "PE": 0,
+    "PP": 0,
+    "GF": 0,
+    "GC": 0,
+    "TP": 0,
+    "DiferenciaGol": 0
+  },
+  {
+    "Nombre": "Fortaleza CEIF",
+    "PJ": 1,
+    "PG": 0,
+    "PE": 0,
+    "PP": 1,
+    "GF": 3,
+    "GC": 4,
+    "TP": 0,
+    "DiferenciaGol": -1
+  }
+]
